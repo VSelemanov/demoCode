@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "dateFrom": {
+      "type": "string",
+      "format": "date",
+      "title": "dateFrom"
+    },
+    "dateTo": {
+      "type": "string",
+      "format": "date",
+      "title": "dateTo"
+    },
+    "ProjectGUID": {
+      "type": "string",
+      "title": "ProjectGUID"
+    }
+  },
+  "required": ["dateFrom", "dateTo"]
+}

@@ -1,0 +1,46 @@
+{
+  "definitions": {
+    "FacilitiesList": {
+      "type": "object",
+      "properties": {
+        "ProjectGUID": {
+          "title": "ProjectGUID",
+          "type": ["string", "null"]
+        }
+      },
+      "required": ["ProjectGUID"]
+    },
+    "Facility": {
+      "type": "object",
+      "properties": {
+        "GUID": {
+          "title": "GUID",
+          "type": "string"
+        }
+      },
+      "required": ["GUID"]
+    },
+    "SeveralFacilityDetails": {
+      "type": "object",
+      "properties": {
+        "GUID": {
+          "title": "GUID",
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "required": ["GUID"]
+    }
+  },
+  "oneOf": [
+    {
+      "$ref": "#/definitions/Facility"
+    },
+    {
+      "$ref": "#/definitions/FacilitiesList"
+    },
+    {
+      "$ref": "#/definitions/SeveralFacilityDetails"
+    }
+  ]
+}

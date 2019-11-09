@@ -1,0 +1,70 @@
+{
+  "definitions": {
+    "IProject": {
+      "title": "IProject",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "name"
+        },
+        "description": {
+          "type": ["null", "string"],
+          "title": "description"
+        },
+        "code": {
+          "type": ["null", "string"],
+          "title": "code"
+        },
+        "previewImg": {
+          "type": ["null", "object"],
+          "title": "previewImg"
+        },
+        "mainImg": {
+          "type": ["null", "object"],
+          "title": "mainImg"
+        },
+        "region": {
+          "type": ["null", "string"],
+          "title": "region"
+        },
+        "town": {
+          "type": ["null", "string"],
+          "title": "town"
+        },
+        "street": {
+          "type": ["null", "string"],
+          "title": "street"
+        },
+        "FacilityCount": {
+          "type": ["null", "string"],
+          "title": "FacilityCount"
+        },
+        "totalArea": {
+          "type": ["null", "string"],
+          "title": "totalArea"
+        },
+        "GUID": {
+          "type": "string",
+          "title": "GUID"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "createdAt"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "updatedAt"
+        },
+        "ProjectStatus": {
+          "type": "string",
+          "title": "ProjectStatus"
+        }
+      },
+      "required": ["GUID"]
+    }
+  },
+  "$ref": "#/definitions/IProject"
+}

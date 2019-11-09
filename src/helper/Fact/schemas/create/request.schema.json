@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "properties": {
+    "value": {
+      "type": "string",
+      "title": "value"
+    },
+    "uploadedAt": {
+      "type": "string",
+      "format": "date-time",
+      "title": "uploadedAt"
+    },
+    "isResource": {
+      "type": "string",
+      "title": "isResource"
+    },
+    "ComponentGUID": {
+      "type": "string",
+      "title": "ComponentGUID"
+    },
+    "JobGUID": {
+      "type": "string",
+      "title": "JobGUID"
+    },
+    "Comment": {
+      "type": "string",
+      "title": "Comment"
+    },
+    "Mark": {
+      "type": "string",
+      "title": "Mark"
+    },
+    "photofact${i}": {
+      "type": "object",
+      "title": "photofact${i}"
+    }
+  },
+  "required": ["ComponentGUID", "uploadedAt", "isResource", "value", "JobGUID"]
+}

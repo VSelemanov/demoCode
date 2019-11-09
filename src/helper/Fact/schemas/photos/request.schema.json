@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "properties": {
+    "objectGUID": {
+      "type": "string",
+      "title": "photofact"
+    }
+  },
+  "required": ["objectGUID"]
+}

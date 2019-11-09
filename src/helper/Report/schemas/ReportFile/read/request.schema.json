@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "properties": {
+    "ReportFileGUID": {
+      "type": "string",
+      "name": "ReportFileGUID"
+    }
+  },
+  "required": ["ReportFileGUID"]
+}

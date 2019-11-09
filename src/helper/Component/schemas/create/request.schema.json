@@ -1,0 +1,71 @@
+{
+  "definitions": {
+    "IComponentBase": {
+      "title": "IComponentBase",
+      "type": "object",
+      "properties": {
+        "ComponentID": {
+          "type": "number",
+          "title": "ComponentID"
+        },
+        "ComponentName": {
+          "type": "string",
+          "title": "ComponentName"
+        },
+        "ComponentDescription": {
+          "type": "string",
+          "title": "ComponentDescription"
+        },
+        "RegisterGUID": {
+          "type": "string",
+          "title": "RegisterGUID"
+        },
+        "FacilityGUID": {
+          "type": ["null", "string"],
+          "title": "FacilityGUID"
+        },
+        "FloorGUID": {
+          "type": ["null", "string"],
+          "title": "FloorGUID"
+        },
+        "SpaceGUID": {
+          "type": ["null", "string"],
+          "title": "SpaceGUID"
+        },
+        "SystemGUID": {
+          "type": ["null", "string"],
+          "title": "SystemGUID"
+        },
+        "ExternalSystemName": {
+          "type": "string",
+          "title": "ExternalSystemName"
+        },
+        "ExternalNameID": {
+          "type": "string",
+          "title": "ExternalNameID"
+        },
+        "CreatedBy": {
+          "type": "string",
+          "title": "CreatedBy"
+        },
+        "Withdrawn": {
+          "type": "string",
+          "title": "Withdrawn"
+        }
+      },
+      "required": [
+        "ComponentID",
+        "ComponentName",
+        "CreatedBy",
+        "ExternalNameID",
+        "ExternalSystemName",
+        "RegisterGUID",
+        "Withdrawn"
+      ]
+    }
+  },
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/IComponentBase"
+  }
+}

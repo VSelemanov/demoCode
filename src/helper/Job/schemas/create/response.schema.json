@@ -1,0 +1,43 @@
+{
+  "definitions": {
+    "IJob": {
+      "type": "object",
+      "properties": {
+        "GUID": {
+          "type": "string",
+          "title": "GUID"
+        },
+        "JobID": {
+          "type": "integer",
+          "title": "JobID"
+        },
+        "JobName": {
+          "type": "string",
+          "title": "JobName"
+        },
+        "GESNGUID": {
+          "type": "string",
+          "title": "GESNGUID"
+        },
+        "ENIRGUID": {
+          "type": "string",
+          "title": "ENIRGUID"
+        },
+        "ClassificationCode": {
+          "type": "string",
+          "title": "ClassificationCode"
+        }
+      },
+      "required": [
+        "GUID",
+        "JobID",
+        "JobName",
+        "GESNGUID",
+        "ENIRGUID",
+        "ClassificationCode"
+      ]
+    }
+  },
+  "type": "array",
+  "items": { "$ref": "IJob" }
+}

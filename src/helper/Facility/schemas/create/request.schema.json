@@ -1,0 +1,177 @@
+{
+  "definitions": {
+    "IFacilityAdditionalParams": {
+      "title": "IFacilityAdditionalParams",
+      "type": "object",
+      "properties": {
+        "deadline": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "deadline"
+        },
+        "floors": {
+          "type": ["null", "number"],
+          "title": "floors"
+        },
+        "area": {
+          "type": ["null", "number"],
+          "title": "area"
+        },
+        "flats": {
+          "type": ["null", "number"],
+          "title": "flats"
+        },
+        "mortgage": {
+          "type": ["null", "string"],
+          "title": "mortgage"
+        },
+        "website": {
+          "type": ["null", "string"],
+          "title": "website"
+        }
+      }
+    },
+
+    "IFacility": {
+      "title": "IFacility",
+      "type": "object",
+      "properties": {
+        "FacilityID": {
+          "type": "number",
+          "title": "FacilityID"
+        },
+        "FacilityName": {
+          "type": "string",
+          "title": "FacilityName"
+        },
+        "FacilityDescription": {
+          "type": "string",
+          "title": "FacilityDescription"
+        },
+        "coordX": {
+          "type": ["null", "number"],
+          "title": "coordX"
+        },
+        "coordY": {
+          "type": ["null", "number"],
+          "title": "coordY"
+        },
+        "ProjectGUID": {
+          "type": "string",
+          "title": "ProjectGUID"
+        },
+        "code": {
+          "type": "string",
+          "title": "code"
+        },
+        "FacilityClass": {
+          "type": ["null", "string"],
+          "title": "FacilityClass"
+        },
+        "FacilityType": {
+          "type": ["null", "string"],
+          "title": "FacilityType"
+        },
+        "region": {
+          "type": ["null", "string"],
+          "title": "region"
+        },
+        "developer": {
+          "type": ["null", "string"],
+          "title": "developer"
+        },
+        "stage": {
+          "type": ["null", "string"],
+          "title": "stage"
+        },
+        "address": {
+          "type": ["null", "string"],
+          "title": "address"
+        },
+        "mainImg": {
+          "type": ["null", "string"],
+          "title": "mainImg"
+        },
+        "additionalParams": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/IFacilityAdditionalParams"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "additionalParams"
+        },
+        "ExternalSystemName": {
+          "type": "string",
+          "title": "ExternalSystemName"
+        },
+        "ExternalNameID": {
+          "type": "string",
+          "title": "ExternalNameID"
+        },
+        "CreatedBy": {
+          "type": "string",
+          "title": "CreatedBy"
+        },
+        "Withdrawn": {
+          "type": "string",
+          "title": "Withdrawn"
+        },
+        "startedAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "startedAt"
+        },
+        "finishedAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "finishedAt"
+        },
+        "GUID": {
+          "type": "string",
+          "title": "GUID"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "createdAt"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "updatedAt"
+        }
+      },
+      "required": [
+        "CreatedBy",
+        "ExternalNameID",
+        "ExternalSystemName",
+        "FacilityName",
+        "ProjectGUID",
+        "Withdrawn",
+        "address",
+        "developer",
+        "finishedAt",
+        "mainImg",
+        "region",
+        "stage",
+        "startedAt"
+      ]
+    }
+  },
+  "type": "array",
+  "builder": "string",
+  "customer": "string",
+  "items": {
+    "$ref": "#/definitions/IFacility"
+  }
+}

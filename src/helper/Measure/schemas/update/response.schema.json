@@ -1,0 +1,37 @@
+{
+  "definitions": {
+    "IMeasure": {
+      "title": "IMeasure",
+      "type": "object",
+      "properties": {
+        "MeasureName": {
+          "type": "string",
+          "title": "MeasureName"
+        },
+        "MeasureID": {
+          "type": "number",
+          "title": "MeasureID"
+        },
+        "GUID": {
+          "type": "string",
+          "title": "GUID"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "createdAt"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "updatedAt"
+        }
+      },
+      "required": ["GUID"]
+    }
+  },
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/IMeasure"
+  }
+}

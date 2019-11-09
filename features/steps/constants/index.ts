@@ -1,0 +1,7 @@
+export const orgId = "6f0b716d-6dc0-4612-8eab-ec197426b844";
+export const token = "9a5a53a1-849f-4f2b-8138-27b8c34c8d1b";
+
+export const JWTAuth =
+  "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmdJZCI6IjZmMGI3MTZkLTZkYzAtNDYxMi04ZWFiLWVjMTk3NDI2Yjg0NCIsInRva2VuIjoiOWE1YTUzYTEtODQ5Zi00ZjJiLTgxMzgtMjdiOGMzNGM4ZDFiIiwianRpIjoiNzk4MTJmY2UtMzhmZS00OTVhLWE4NTUtYzk3ZTRmNmQ0YWYzIiwiaWF0IjoxNTU4NTA5MzM0LCJleHAiOjE1NTg1MTI5MzQsImlkIjoiMDQxOWY0Y2MtNTZhMi00NDA1LWE3MzktMjI2Njk1ZjUzNjY0In0._SdXPEJOo3zTymZNPJ0JCjk8CiSkBUwAhLZCXdpg1wc";
+
+export const Authorization = `Bearer ${JWTAuth}`;

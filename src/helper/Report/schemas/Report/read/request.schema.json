@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "properties": {
+    "ReportTypeGUID": {
+      "type": "string",
+      "name": "ReportTypeGUID"
+    },
+    "dateTo": {
+      "type": "string",
+      "format": "date-time",
+      "name": "dateTo"
+    }
+  },
+  "required": ["ReportTypeGUID"]
+}

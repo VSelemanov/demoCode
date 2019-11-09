@@ -1,0 +1,44 @@
+{
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "FacilityGUID": {
+          "type": "string",
+          "title": "FacilityGUID"
+        }
+      },
+      "required": ["FacilityGUID"]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "FloorGUID": {
+          "type": "string",
+          "title": "FloorGUID"
+        }
+      },
+      "required": ["FloorGUID"]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "SpaceGUID": {
+          "type": "string",
+          "title": "SpaceGUID"
+        }
+      },
+      "required": ["SpaceGUID"]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "SystemGUID": {
+          "type": "string",
+          "title": "SystemGUID"
+        }
+      },
+      "required": ["SystemGUID"]
+    }
+  ]
+}

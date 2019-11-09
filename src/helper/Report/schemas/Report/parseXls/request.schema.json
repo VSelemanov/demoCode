@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "properties": {
+    "ReportFile": {
+      "type": "object",
+      "name": "ReportFile"
+    },
+    "ReportTypeGUID": {
+      "type": "string",
+      "name": "ReportTypeGUID"
+    },
+    "ReportGUID": {
+      "type": "string",
+      "name": "ReportGUID"
+    }
+  },
+  "required": ["ReportFile", "ReportTypeGUID"]
+}

@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "IProject": {
+      "title": "IProject",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "name"
+        },
+        "description": {
+          "type": ["string", "null"],
+          "title": "description"
+        },
+        "code": {
+          "type": "string",
+          "title": "code"
+        },
+        "id": {
+          "type": "string",
+          "title": "id"
+        },
+        "previewImg": {
+          "type": ["string", "null"],
+          "title": "previewImg"
+        },
+        "mainImg": {
+          "type": ["string", "null"],
+          "title": "mainImg"
+        },
+        "region": {
+          "type": ["string", "null"],
+          "title": "region"
+        },
+        "town": {
+          "type": ["string", "null"],
+          "title": "town"
+        },
+        "street": {
+          "type": ["string", "null"],
+          "title": "street"
+        },
+        "bimObjectCount": {
+          "type": ["number", "null"],
+          "title": "bimObjectCount"
+        },
+        "totalArea": {
+          "type": ["number", "null"],
+          "title": "totalArea"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "createdAt"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "updatedAt"
+        },
+        "ProjectStatus": {
+          "type": "string",
+          "title": "ProjectStatus"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "previewImg",
+        "mainImg",
+        "description",
+        "region",
+        "town",
+        "street",
+        "bimObjectCount",
+        "totalArea",
+        "ProjectStatus"
+      ]
+    }
+  },
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/IProject"
+  }
+}

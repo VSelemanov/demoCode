@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "IObject": {
+      "title": "IProject",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "name"
+        },
+        "description": {
+          "type": "string",
+          "title": "description"
+        },
+        "code": {
+          "type": "string",
+          "title": "code"
+        },
+        "id": {
+          "type": "string",
+          "title": "id"
+        },
+        "previewImg": {
+          "type": "string",
+          "title": "previewImg"
+        },
+        "mainImg": {
+          "type": "string",
+          "title": "mainImg"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "createdAt"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "updatedAt"
+        }
+      },
+      "required": ["createdAt", "id", "name", "updatedAt"]
+    }
+  },
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/IProject"
+  }
+}

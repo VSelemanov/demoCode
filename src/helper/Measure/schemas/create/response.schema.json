@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "title": "GUID"
+    },
+    "KSRGUID": {
+      "type": "string",
+      "title": "KSRGUID"
+    },
+    "ClassificationID": {
+      "type": "number",
+      "title": "ClassificationID"
+    },
+    "ResourceName": {
+      "type": "string",
+      "title": "ResourceName"
+    }
+  },
+  "required": ["KSRGUID", "ClassificationID", "ResourceName"]
+}

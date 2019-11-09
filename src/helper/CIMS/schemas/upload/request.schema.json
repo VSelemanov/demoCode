@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "cimsFile": {
+      "type": "object",
+      "name": "cimsFile"
+    },
+    "ProjectGUID": {
+      "type": "string",
+      "name": "ProjectGUID"
+    }
+  },
+  "required": ["cimsFile", "ProjectGUID"]
+}

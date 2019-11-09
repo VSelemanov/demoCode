@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "value": {
+      "type": "number",
+      "title": "value"
+    },
+    "uploadedAt": {
+      "type": "string",
+      "format": "date-time",
+      "title": "uploadedAt"
+    },
+    "isResource": {
+      "type": "boolean",
+      "title": "isResource"
+    },
+    "ComponentGUID": {
+      "type": "string",
+      "title": "ComponentGUID"
+    }
+  },
+  "required": ["ComponentGUID", "uploadedAt", "isResource", "value"]
+}

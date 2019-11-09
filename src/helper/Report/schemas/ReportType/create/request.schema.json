@@ -1,0 +1,26 @@
+{
+  "definitions": {
+    "IReportTypeBase": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string",
+          "title": "code"
+        },
+        "name": {
+          "type": "string",
+          "title": "name"
+        },
+        "example": {
+          "type": "string",
+          "title": "example"
+        }
+      },
+      "required": ["name", "example"]
+    }
+  },
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/IReportTypeBase"
+  }
+}

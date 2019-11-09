@@ -1,0 +1,59 @@
+{
+  "definitions": {
+    "IFact": {
+      "title": "IFact",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ComponentGUID": {
+          "type": "string",
+          "title": "ComponentGUID"
+        },
+        "JobGUID": {
+          "type": "string",
+          "title": "JobGUID"
+        },
+        "isResource": {
+          "type": "boolean",
+          "title": "isResource"
+        },
+        "value": {
+          "type": "number",
+          "title": "value"
+        },
+        "uploadedAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "uploadedAt"
+        },
+        "Comment": {
+          "type": ["null", "string"],
+          "title": "Comment"
+        },
+        "Mark": {
+          "type": ["null", "number"],
+          "title": "Mark"
+        },
+        "GUID": {
+          "type": "string",
+          "title": "GUID"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "createdAt"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "updatedAt"
+        }
+      },
+      "required": ["GUID"]
+    }
+  },
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/IFact"
+  }
+}

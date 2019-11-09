@@ -1,0 +1,132 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "ISpace": {
+      "title": "ISpace",
+      "type": "object",
+      "properties": {
+        "FloorGUID": {
+          "type": "string",
+          "title": "FloorGUID"
+        },
+        "SpaceID": {
+          "type": "number",
+          "title": "SpaceID"
+        },
+        "SpaceFunction": {
+          "type": "string",
+          "title": "SpaceFunction"
+        },
+        "SpaceNumber": {
+          "type": "string",
+          "title": "SpaceNumber"
+        },
+        "SpaceName": {
+          "type": "string",
+          "title": "SpaceName"
+        },
+        "SpaceDescription": {
+          "type": "string",
+          "title": "SpaceDescription"
+        },
+        "SpaceUsableHeight": {
+          "type": "number",
+          "title": "SpaceUsableHeight"
+        },
+        "SpaceUsableHeightUnits": {
+          "type": "string",
+          "title": "SpaceUsableHeightUnits"
+        },
+        "ExternalSystemName": {
+          "type": "string",
+          "title": "ExternalSystemName"
+        },
+        "ExternalNameID": {
+          "type": "string",
+          "title": "ExternalNameID"
+        },
+        "CreatedBy": {
+          "type": "string",
+          "title": "CreatedBy"
+        },
+        "Withdrawn": {
+          "type": "string",
+          "title": "Withdrawn"
+        },
+        "startedAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "startedAt"
+        },
+        "finishedAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "finishedAt"
+        },
+        "ExteriorGrossArea": {
+          "type": "number",
+          "title": "ExteriorGrossArea"
+        },
+        "ExteriorGrossAreaUnit": {
+          "type": "string",
+          "title": "ExteriorGrossAreaUnit"
+        },
+        "InteriorGrossArea": {
+          "type": "number",
+          "title": "InteriorGrossArea"
+        },
+        "InteriorGrossAreaUnit": {
+          "type": "string",
+          "title": "InteriorGrossAreaUnit"
+        },
+        "PlannableGrossArea": {
+          "type": "number",
+          "title": "PlannableGrossArea"
+        },
+        "PlannableGrossAreaUnit": {
+          "type": "string",
+          "title": "PlannableGrossAreaUnit"
+        },
+        "RentableAreaUsableArea": {
+          "type": "number",
+          "title": "RentableAreaUsableArea"
+        },
+        "RentableAreaUsableAreaUnits": {
+          "type": "string",
+          "title": "RentableAreaUsableAreaUnits"
+        },
+        "InteriorPlannableArea": {
+          "type": "number",
+          "title": "InteriorPlannableArea"
+        },
+        "InteriorPlannableAreaUnits": {
+          "type": "number",
+          "title": "InteriorPlannableAreaUnits"
+        },
+        "CalculationMethod": {
+          "type": "string",
+          "title": "CalculationMethod"
+        },
+        "GUID": {
+          "type": "string",
+          "title": "GUID"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "createdAt"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "updatedAt"
+        }
+      },
+      "required": ["GUID"]
+    }
+  },
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/ISpace"
+  }
+}

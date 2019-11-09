@@ -1,0 +1,81 @@
+{
+  "definitions": {
+    "IComponent": {
+      "title": "IComponent",
+      "type": "object",
+      "properties": {
+        "ComponentID": {
+          "type": "number",
+          "title": "ComponentID"
+        },
+        "ComponentName": {
+          "type": "string",
+          "title": "ComponentName"
+        },
+        "Count": {
+          "type": "number",
+          "title": "Count"
+        },
+        "ComponentDescription": {
+          "type": "string",
+          "title": "ComponentDescription"
+        },
+        "RegisterGUID": {
+          "type": "string",
+          "title": "RegisterGUID"
+        },
+        "FacilityGUID": {
+          "type": ["null", "string"],
+          "title": "FacilityGUID"
+        },
+        "FloorGUID": {
+          "type": ["null", "string"],
+          "title": "FloorGUID"
+        },
+        "SpaceGUID": {
+          "type": ["null", "string"],
+          "title": "SpaceGUID"
+        },
+        "SystemGUID": {
+          "type": ["null", "string"],
+          "title": "SystemGUID"
+        },
+        "ExternalSystemName": {
+          "type": "string",
+          "title": "ExternalSystemName"
+        },
+        "ExternalNameID": {
+          "type": "string",
+          "title": "ExternalNameID"
+        },
+        "CreatedBy": {
+          "type": "string",
+          "title": "CreatedBy"
+        },
+        "Withdrawn": {
+          "type": "string",
+          "title": "Withdrawn"
+        },
+        "GUID": {
+          "type": "string",
+          "title": "GUID"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "createdAt"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "updatedAt"
+        }
+      },
+      "required": ["GUID"]
+    }
+  },
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/IComponent"
+  }
+}

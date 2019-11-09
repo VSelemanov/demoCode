@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "value": {
+      "type": "number",
+      "title": "value"
+    },
+    "isResource": {
+      "type": "boolean",
+      "title": "isResource"
+    },
+    "ComponentGUID": {
+      "type": "string",
+      "title": "ComponentGUID"
+    },
+    "JobGUID": {
+      "type": "string",
+      "title": "JobGUID"
+    }
+  },
+  "required": ["ComponentGUID", "isResource", "value", "JobGUID"]
+}

@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "properties": {
+    "FacilityGUID": {
+      "type": "string",
+      "title": "FacilityGUID"
+    }
+  },
+  "required": ["FacilityGUID"]
+}

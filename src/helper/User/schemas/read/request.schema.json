@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "properties": {
+    "ComponentGUID": {
+      "type": "string",
+      "title": "ComponentGUID"
+    }
+  },
+  "required": ["ComponentGUID"]
+}

@@ -1,0 +1,44 @@
+{
+  "definitions": {
+    "IResource": {
+      "title": "IResource",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ParentGUID": {
+          "type": ["null", "string"],
+          "title": "ParentGUID"
+        },
+        "MeasureGUID": {
+          "type": ["null", "string"],
+          "title": "MeasureGUID"
+        },
+        "KSRGUID": {
+          "type": ["null", "string"],
+          "title": "KSRGUID"
+        },
+        "ClassificationID": {
+          "type": ["null", "number"],
+          "title": "ClassificationID"
+        },
+        "ResourceName": {
+          "type": "string",
+          "title": "ResourceName"
+        },
+        "GUID": {
+          "type": "string",
+          "title": "GUID"
+        },
+        "ClassificationCode": {
+          "type": "string",
+          "title": "ClassificationCode"
+        }
+      },
+      "required": ["GUID"]
+    }
+  },
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/IResource"
+  }
+}

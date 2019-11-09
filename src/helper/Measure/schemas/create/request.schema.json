@@ -1,0 +1,22 @@
+{
+  "definitions": {
+    "IMeasureBase": {
+      "type": "object",
+      "properties": {
+        "MeasureName": {
+          "type": "string",
+          "title": "MeasureName"
+        },
+        "MeasureID": {
+          "type": "number",
+          "title": "MeasureID"
+        }
+      },
+      "required": ["MeasureName", "MeasureID"]
+    }
+  },
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/IMeasureBase"
+  }
+}

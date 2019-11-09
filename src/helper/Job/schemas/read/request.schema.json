@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "properties": {
+    "ResourceGUID": {
+      "type": "string",
+      "title": "ResourceGUID"
+    },
+    "isTree": {
+      "type": "string",
+      "title": "isTree"
+    }
+  }
+}

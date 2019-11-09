@@ -1,0 +1,131 @@
+{
+  "definitions": {
+    "IFloor": {
+      "title": "IFloor",
+      "type": "object",
+      "properties": {
+        "FacilityGUID": {
+          "type": "string",
+          "title": "FacilityGUID"
+        },
+        "FloorID": {
+          "type": "number",
+          "title": "FloorID"
+        },
+        "FloorName": {
+          "type": "string",
+          "title": "FloorName"
+        },
+        "FloorReferenceID": {
+          "type": "string",
+          "title": "FloorReferenceID"
+        },
+        "FloorElevation": {
+          "type": "number",
+          "title": "FloorElevation"
+        },
+        "FloorElevationUnits": {
+          "type": "string",
+          "title": "FloorElevationUnits"
+        },
+        "FloorTotalHeight": {
+          "type": "number",
+          "title": "FloorTotalHeight"
+        },
+        "FloorTotalHeightUnits": {
+          "type": "string",
+          "title": "FloorTotalHeightUnits"
+        },
+        "ExternalSystemName": {
+          "type": "string",
+          "title": "ExternalSystemName"
+        },
+        "ExternalNameID": {
+          "type": "string",
+          "title": "ExternalNameID"
+        },
+        "CreatedBy": {
+          "type": "string",
+          "title": "CreatedBy"
+        },
+        "Withdrawn": {
+          "type": "string",
+          "title": "Withdrawn"
+        },
+        "startedAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "startedAt"
+        },
+        "finishedAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "finishedAt"
+        },
+        "ExteriorGrossArea": {
+          "type": "number",
+          "title": "ExteriorGrossArea"
+        },
+        "ExteriorGrossAreaUnit": {
+          "type": "string",
+          "title": "ExteriorGrossAreaUnit"
+        },
+        "InteriorGrossArea": {
+          "type": "number",
+          "title": "InteriorGrossArea"
+        },
+        "InteriorGrossAreaUnit": {
+          "type": "string",
+          "title": "InteriorGrossAreaUnit"
+        },
+        "PlannableGrossArea": {
+          "type": "number",
+          "title": "PlannableGrossArea"
+        },
+        "PlannableGrossAreaUnit": {
+          "type": "string",
+          "title": "PlannableGrossAreaUnit"
+        },
+        "RentableAreaUsableArea": {
+          "type": "number",
+          "title": "RentableAreaUsableArea"
+        },
+        "RentableAreaUsableAreaUnits": {
+          "type": "string",
+          "title": "RentableAreaUsableAreaUnits"
+        },
+        "InteriorPlannableArea": {
+          "type": "number",
+          "title": "InteriorPlannableArea"
+        },
+        "InteriorPlannableAreaUnits": {
+          "type": "number",
+          "title": "InteriorPlannableAreaUnits"
+        },
+        "CalculationMethod": {
+          "type": "string",
+          "title": "CalculationMethod"
+        },
+        "GUID": {
+          "type": "string",
+          "title": "GUID"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "createdAt"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "updatedAt"
+        }
+      },
+      "required": ["GUID"]
+    }
+  },
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/IFloor"
+  }
+}

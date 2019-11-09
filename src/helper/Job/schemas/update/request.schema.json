@@ -1,0 +1,58 @@
+{
+  "definitions": {
+    "IJob": {
+      "title": "IJob",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ENIRGUID": {
+          "type": ["null", "string"],
+          "title": "ENIRGUID"
+        },
+        "GESNGUID": {
+          "type": ["null", "string"],
+          "title": "GESNGUID"
+        },
+        "JobName": {
+          "type": ["null", "string"],
+          "title": "JobName"
+        },
+        "ResourceGUID": {
+          "type": ["null", "string"],
+          "title": "ResourceGUID"
+        },
+        "ParentGUID": {
+          "type": ["null", "string"],
+          "title": "ParentGUID"
+        },
+        "MeasureGUID": {
+          "type": ["null", "string"],
+          "title": "MeasureGUID"
+        },
+        "GUID": {
+          "type": "string",
+          "title": "GUID"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "createdAt"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "updatedAt"
+        },
+        "ClassificationCode": {
+          "type": "string",
+          "title": "ClassificationCode"
+        }
+      },
+      "required": ["GUID"]
+    }
+  },
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/IJob"
+  }
+}

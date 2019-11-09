@@ -1,0 +1,41 @@
+{
+  "definitions": {
+    "IReportType": {
+      "title": "IReportType",
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string",
+          "title": "code"
+        },
+        "name": {
+          "type": "string",
+          "title": "name"
+        },
+        "example": {
+          "type": "string",
+          "title": "example"
+        },
+        "GUID": {
+          "type": "string",
+          "title": "GUID"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "createdAt"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "title": "updatedAt"
+        }
+      },
+      "required": ["GUID"]
+    }
+  },
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/IReportType"
+  }
+}

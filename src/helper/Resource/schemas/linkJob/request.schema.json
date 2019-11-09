@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "ResourceGUID": {
+      "type": "string",
+      "title": "ResourceGUID"
+    },
+    "JobGUIDs": {
+      "type": "array",
+      "title": "JobGUIDs",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": ["ResourceGUID", "JobGUIDs"]
+}
